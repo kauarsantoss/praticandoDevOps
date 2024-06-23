@@ -20,4 +20,10 @@ jobs:
         java-version: '20'
         distribution: 'oracle'
     - name: Build with Ant
-      run: ant -noinput -buildfile build.xml
+      run: javac src/ogro.java -d out
+
+    - name: Rodando Programa
+      run: java -cp out ogro
+
+    - name: mensagem de sucesso
+      run: echo DEU GREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEENNNNNNNNNNNNNNNNNNNN!!!!!!!!!!!!!!!!!!!
