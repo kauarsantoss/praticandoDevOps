@@ -20,13 +20,10 @@ jobs:
         java-version: '20'
         distribution: 'oracle'
     - name: Build with Ant
-      run: javac src/ogro.java -d out
-
-    - name: Criar arquivo de input
-      run: echo "2\n4" > input.txt
+      run: javac src/Main.java -d out
 
     - name: Rodando Programa
-      run: java -cp out ogro
+      run: java -cp out Main
 
     - name: mensagem de sucesso
       run: echo DEU GREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEENNNNNNNNNNNNNNNNNNNN!!!!!!!!!!!!!!!!!!!
